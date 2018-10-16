@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=/Users/humphreyminott/my_git_repos/bam/pebbles-meta/.git\:
-GitRepositoriesView.GitDirectories.relative=/Users/humphreyminott/my_git_repos/bam/pebbles-meta/.git\:
+GitRepositoriesView.GitDirectories=/Users/humphreyminott/my_git_repos/bam/pebbles-meta/.git\:/Users/humphreyminott/my_git_repos/MovieReview/.git\:
+GitRepositoriesView.GitDirectories.relative=/Users/humphreyminott/my_git_repos/bam/pebbles-meta/.git\:.git\:
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
