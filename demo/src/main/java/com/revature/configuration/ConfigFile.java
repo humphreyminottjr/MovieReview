@@ -10,12 +10,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 @EnableWebMvc
 public class ConfigFile implements WebMvcConfigurer{
-
-	@Override
-	public void addCorsMappings(CorsRegistry registry) {
-		registry.addMapping("/**").allowedMethods("GET", "POST", "PUT");
-	}
-	
 	
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
