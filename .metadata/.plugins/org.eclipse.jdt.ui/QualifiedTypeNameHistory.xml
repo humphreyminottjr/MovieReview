@@ -6,4 +6,18 @@
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
 <fullyQualifiedTypeName name="javax.persistence.Table"/>
+<fullyQualifiedTypeName name="javax.transaction.Transactional"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+<fullyQualifiedTypeName name="com.revature.models.Users"/>
+<fullyQualifiedTypeName name="com.revature.models.Review"/>
+<fullyQualifiedTypeName name="com.revature.models.Movies"/>
+<fullyQualifiedTypeName name="com.revature.models.Comments"/>
+<fullyQualifiedTypeName name="com.revature.models.Bookmarks"/>
+<fullyQualifiedTypeName name="com.revature.services.BookmarksService"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.revature.services.CommentsService"/>
+<fullyQualifiedTypeName name="com.revature.services.MovieService"/>
+<fullyQualifiedTypeName name="com.revature.services.UserService"/>
+<fullyQualifiedTypeName name="com.revature.repositories.CommentsRepo"/>
+<fullyQualifiedTypeName name="com.revature.repositories.UserRepo"/>
 </qualifiedTypeNameHistroy>

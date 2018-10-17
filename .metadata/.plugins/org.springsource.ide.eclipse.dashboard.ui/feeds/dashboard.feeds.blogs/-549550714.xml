@@ -5,7 +5,73 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-10-16T19:04:00Z</updated>
+  <updated>2018-10-17T15:33:54Z</updated>
+  <entry>
+    <title>Spring Boot 2.1.0 RC1 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/10/17/spring-boot-2-1-0-rc1-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Stéphane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2018-10-17:3438</id>
+    <updated>2018-10-17T15:33:54Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team, it is my pleasure to announce that Spring Boot 2.1.0.RC1 has been released and is now available from &lt;a href="http://repo.spring.io/milestone/"&gt;our milestone repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release closes &lt;a href="https://github.com/spring-projects/spring-boot/milestone/107?closed=1"&gt;over 100 issues and pull requests&lt;/a&gt;, and is our first release candidate. At this point we&amp;rsquo;re not anticipating that any major API changes or new features will be added before our final 2.1 GA release.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve refined a number of items from previous milestone, and provide a number of notable new features including:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Auto-configuration for additional Micrometer registries: AppOptics, Humio and KairosDB&lt;/li&gt;
+  &lt;li&gt;Support for Jersey metrics (Thread pool and HTTP request)&lt;/li&gt;
+  &lt;li&gt;Integration with Hibernate&amp;rsquo;s &lt;code&gt;BeanContainer&lt;/code&gt; API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This release also picks up &lt;a href="https://github.com/spring-projects/spring-boot/milestone/121?closed=1"&gt;97 issues&lt;/a&gt; that were closed for the &lt;a href="https://spring.io/blog/2018/10/16/spring-boot-2-0-6"&gt;recent 2.0.6 release&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For a complete list of changes, and upgrade instructions, see the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.1.0-RC1-Release-Notes"&gt;Spring Boot 2.1.0.RC1 Release Notes&lt;/a&gt; on the WIKI. &lt;/p&gt;
+&lt;p&gt;To get started with Spring Boot 2.1.0 RC1 and discover those new features, you can easily bootstrap a new project on &lt;a href="https://start.spring.io"&gt;start.spring.io&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks to everyone that has contributed to Spring Boot 2.1 so far!&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.1.0.RC1/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - October 16th, 2018</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/10/16/this-week-in-spring-october-16th-2018" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2018-10-16:3436</id>
+    <updated>2018-10-16T20:46:53Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I&amp;rsquo;m in Toronto, Canada, where I&amp;rsquo;ve been speaking to &lt;a href="https://www.meetup.com/Toronto-Pivotal-User-Group/events/255197650/"&gt;customers and at a meetup&lt;/a&gt;, then it&amp;rsquo;s off to St. Petersburg, Russia for the &lt;a href="https://jokerconf.com/en/"&gt;epic Joker conf 2018&lt;/a&gt;. As usual, we&amp;rsquo;ve got a ton to cover so let&amp;rsquo;s get to it! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Check out this new version of the legendary &lt;a href="https://github.com/spring-petclinic/spring-petclinic-data-jdbc"&gt;Spring Petclinic, based on the new Spring Data JDBC&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/10/16/spring-security-oauth-2-3-4-2-2-3-2-1-3-2-0-16-released"&gt;Spring Security OAuth 2.3.4, 2.2.3, 2.1.3, 2.0.16 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Rossen Stoyanchev has just announced the publication, &lt;a href="https://spring.io/blog/2018/10/16/spring-project-vulnerability-reports-published"&gt;and resolution for, two CVEs affecting Spring - READ THIS!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/10/16/spring-boot-2-0-6"&gt;Spring Boot 2.0.6&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/10/16/spring-session-apple-sr6-released"&gt;Spring Session Apple SR6 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/10/16/spring-security-5-1-1-5-0-9-and-4-2-9-released"&gt;Spring Security 5.1.1, 5.0.9, and 4.2.9 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/10/16/spring-boot-1-5-17"&gt;Spring Boot 1.5.17&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Some nice posts here &lt;a href="https://spring.io/blog/2018/10/16/spring-noticias-en-espa-ol-16-de-octubre-2018"&gt;for the Spanish-language readers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/10/15/spring-data-lovelace-sr1-kay-sr11-and-ingalls-sr16-released"&gt;Spring Data Lovelace SR1, Kay SR11, and Ingalls SR16 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/10/15/spring-framework-5-1-1-5-0-10-and-4-3-20-available-now"&gt;Spring Framework 5.1.1, 5.0.10 and 4.3.20 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://content.pivotal.io/springone-platform-2018/juergen-hoeller-pivotal-springone-platform-2018"&gt;Juergen Hoeller, Pivotal—Current and Future State of Java, SpringOne Platform 2018&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Nice whitepaper &lt;a href="https://content.pivotal.io/white-papers/application-modernization-with-cloud-flexibility"&gt;by Uli Homann, Distinguished Architect, Microsoft and Josh McKenty, Vice President &amp;amp; Field CTO, Pivotal&lt;/a&gt; on &lt;a href="https://content.pivotal.io/white-papers/application-modernization-with-cloud-flexibility"&gt;cloud flexibility&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springframework/status/1052293878559244288"&gt;https://twitter.com/springframework/status/1052293878559244288&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Jakub Pilimon put together a nice look &lt;a href="https://thenewstack.io/how-cqrs-works-with-spring-tools/"&gt;at how Spring supports CQRS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Wow! The Spring Boot &lt;a href="https://twitter.com/springcentral/status/1051944714834825216"&gt;project has almost 500 contributors!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I &lt;em&gt;love&lt;/em&gt; Richard Seroter&amp;rsquo;s recent series on all the things you may not have been &lt;a href="https://twitter.com/rseroter/status/1050800265723428865?s=12"&gt;aware that Cloud Foundry could run&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://forum.thymeleaf.org/Thymeleaf-Spring-Security-integration-3-0-3-with-Spring-Security-5-WebFlux-support-JUST-PUBLISHED-td4031349.html"&gt;Thymeleaf Spring Security integration 3.0.3&lt;/a&gt; (with Spring Security 5 + WebFlux support)&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/rcmoutinho/status/1050411575746682880?s=12"&gt;Are you interested in presenting&lt;/a&gt;? Bruno Souza, a legend in his own right, and I had a discussion on how to help people present. It&amp;rsquo;s a bit meta. I hope it&amp;rsquo;s useful. I would &lt;em&gt;love&lt;/em&gt; to be made irrelevant :) The more people out there helping disseminate good, sound technology practice, the better! Want to give a talk? Do it! You know I&amp;rsquo;m always happy to support &lt;a href="http://twitter.com/Starbuxman"&gt;such initiatives, right&lt;/a&gt;? My DM&amp;rsquo;s are open!&lt;/li&gt;
+  &lt;li&gt;Want to build upon the stack being used to power one of the largest e-commerce engines on the planet, Alibaba? They&amp;rsquo;re using Spring Cloud! They&amp;rsquo;ve even adapted and open-sourced their proprietary infrastructure into a project &lt;a href="https://medium.com/@alitech_2017/dynamic-microservices-alibabas-nacos-embraces-the-spring-ecosystem-4b32df127efc"&gt;called Nacos, which they introduce here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;There&amp;rsquo;s also some really &lt;a href="https://twitter.com/snicoll/status/1050646237588811777?s=12"&gt;compelling new stuff in store for Flyway&lt;/a&gt; in &lt;a href="https://twitter.com/snicoll/status/1050646237588811777?s=12"&gt;the new Spring Boot! Check it out!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Whew! Some good stuff coming to Spring Cloud Contract via this &lt;em&gt;massive&lt;/em&gt; PR to Rest Assured submitted by the &lt;a href="https://twitter.com/mgrzejszczak/status/1050642922088017922?s=12"&gt;Spring Cloud Contract ninja Olga Maciaszek-Sharma &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Nice Spanish-language post on building &lt;a href="http://www.profesor-p.com/2018/10/11/aplicacion-crud-en-kotlin-y-springboot-2a-parte/"&gt;CRUD and REST applications with Kotlin and Spring Boot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I did an interview that has &lt;a href="https://twitter.com/jugru/status/1050024970481487872?s=12"&gt;been translated into Russian - check it out!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;There is a ton of Spring-related content to come out of this Microsoft Ignite 2018 event - &lt;a href="https://medium.com/@bbenz/videos-are-already-ready-for-the-java-sessions-at-microsoft-ignite-2018-ce2e1893658c?wt.mc_id=blog-bbenz-ignite"&gt;check it out!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Livelessons videos that Spring Security lead Rob Winch and I put together are coming soon! Check this page &lt;a href="http://www.informit.com/store/spring-security-livelessons-video-training-9780135383117"&gt;on Oct 25, 2018&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Christoph Nahr has put together a nice post that, while not strictly speaking about Spring, will certainly serve the Spring user quite well: it looks &lt;a href="https://news.kynosarges.org/2018/09/26/java-se-11-the-great-removal/"&gt;at what&amp;rsquo;s been removed in Java 11 (which, of course, you &lt;em&gt;are&lt;/em&gt; already using, right?)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Okta Developer blog features a new post on build a mobile app &lt;a href="https://developer.okta.com/blog/2018/10/10/react-native-spring-boot-mobile-app"&gt;with React Native and Spring Boot &lt;/a&gt; - check it out!&lt;/li&gt;
+  &lt;li&gt;This isn&amp;rsquo;t, strictly speaking, a Spring related post but it&amp;rsquo;s interesting: how to build Java runtime for &lt;a href="https://medium.com/azulsystems/using-jlink-to-build-java-runtimes-for-non-modular-applications-9568c5e70ef4"&gt;non-modular applications using &lt;code&gt;jlink&lt;/code&gt; in Java 9+.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This post - on projections with &lt;a href="https://www.bluemagma.be/2018/10/content-negotiation-with-spring-data-jpa-projections/"&gt;Spring Data JPA&lt;/a&gt; - is quite handy / thoughtful. Check it out!&lt;/li&gt;
+  &lt;li&gt;Want to learn about reactive programming? Check out the code and &lt;a href="https://github.com/rwinch/spring-reactive-intro/"&gt;slides to Rob Winch&amp;rsquo;s epic &lt;em&gt;Intro to Reactive Programming&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>Spring Security OAuth 2.3.4, 2.2.3, 2.1.3, 2.0.16 Released</title>
     <link rel="alternate" href="https://spring.io/blog/2018/10/16/spring-security-oauth-2-3-4-2-2-3-2-1-3-2-0-16-released" />
@@ -70,7 +136,7 @@
     <id>tag:spring.io,2018-10-16:3432</id>
     <updated>2018-10-16T18:02:00Z</updated>
     <content type="html">&lt;p&gt;On behalf of the team and everyone that contributed, it is my pleasure to announce that Spring Boot 2.0.6 has been released and is is now available from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Spring Boot 2.0.6 includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.0.6.RELEASE"&gt;97 fixes, improvements, and dependency updates&lt;/a&gt; as well as &lt;a href="https://spring.io/admin/blog/3435-spring-project-vulnerability-reports-published"&gt;2 CVE reports&lt;/a&gt;. Thanks to all that have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
+&lt;p&gt;Spring Boot 2.0.6 includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.0.6.RELEASE"&gt;97 fixes, improvements, and dependency updates&lt;/a&gt; as well as &lt;a href="https://spring.io/blog/2018/10/16/spring-project-vulnerability-reports-published"&gt;a Spring Framework CVE report&lt;/a&gt;. Thanks to all that have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
 &lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.0.6.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
@@ -119,7 +185,7 @@
     <id>tag:spring.io,2018-10-16:3431</id>
     <updated>2018-10-16T10:23:00Z</updated>
     <content type="html">&lt;p&gt;On behalf of the team and everyone that contributed, I am pleased to announce that Spring Boot 1.5.17 has been released and is is now available from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Spring Boot 1.5.17 includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v1.5.17.RELEASE"&gt;19 fixes, improvements, and dependency updates&lt;/a&gt; as well as &lt;a href="https://spring.io/admin/blog/3435-spring-project-vulnerability-reports-published"&gt;2 CVE reports&lt;/a&gt;. Thanks to all that have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
+&lt;p&gt;Spring Boot 1.5.17 includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v1.5.17.RELEASE"&gt;19 fixes, improvements, and dependency updates&lt;/a&gt; as well as &lt;a href="https://spring.io/blog/2018/10/16/spring-project-vulnerability-reports-published"&gt;2 CVE reports&lt;/a&gt;. Thanks to all that have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
 &lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/1.5.17.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
@@ -267,7 +333,7 @@
   &lt;li&gt;Spring Data Elasticsearch 3.1.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-elasticsearch/3.1.1.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/3.1.1.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/3.1.1.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/3.1.1.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Spring Data Couchbase 3.1.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-couchbase/3.1.1.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.1.1.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.1.1.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.1.1.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Spring Data JDBC 1.0.1 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-jdbc/1.0.1.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jdbc/docs/1.0.1.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jdbc/docs/1.0.1.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jdbc/docs/1.0.1.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;h2&gt;&lt;a href="#kay-sr10" class="anchor" name="kay-sr10"&gt;&lt;/a&gt;Kay SR10&lt;/h2&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#kay-sr11" class="anchor" name="kay-sr11"&gt;&lt;/a&gt;Kay SR11&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Spring Data Commons 2.0.11 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-commons/2.0.11.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/2.0.11.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/2.0.11.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/2.0.11.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Spring Data JPA 2.0.11 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-jpa/2.0.11.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/2.0.11.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/2.0.11.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/2.0.11.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
@@ -315,7 +381,7 @@
 &lt;p&gt;The first maintenance release of the 5.1 line includes &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10000&amp;version=17148"&gt;over 30 fixes and improvements&lt;/a&gt;. Spring Framework 5.0.10 &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10000&amp;version=17115"&gt;also includes a wide range of 20 fixes and improvements&lt;/a&gt; while Spring Framework 4.3.20 &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10000&amp;version=17116"&gt;is a rather minimal patch release&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The first release candidate of Spring Boot 2.1, based on Spring Framework 5.1.1, is around the corner! We&amp;rsquo;ll also follow up with corresponding Spring Boot 2.0.6 and 1.5.17 releases later this week.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://spring.io/projects/spring-framework"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://jira.spring.io/browse/SPR"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.1.1.RELEASE/spring-framework-reference"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2018-10-16 UPDATE:&lt;/strong&gt; The releases address a vulnerability. Please see &lt;a href="https://spring.io/admin/blog/3435-spring-project-vulnerability-reports-published"&gt;this blog post&lt;/a&gt; published after the associated Spring Boot 2.0.6 and 1.5.17 releases.&lt;/p&gt;</content>
+&lt;p&gt;&lt;strong&gt;2018-10-16 UPDATE:&lt;/strong&gt; The releases address a vulnerability. Please see &lt;a href="https://spring.io/blog/2018/10/16/spring-project-vulnerability-reports-published"&gt;this blog post&lt;/a&gt; published after the associated Spring Boot 2.0.6 and 1.5.17 releases.&lt;/p&gt;</content>
   </entry>
   <entry>
     <title>This Week in Spring - October 9th, 2018</title>
@@ -1045,251 +1111,5 @@ However, in cases where you are certain about at least the property type, it may
 &lt;p&gt;Several other enhancements have found their way into the MongoDB module, but we do not have the space to address them here.
 Make sure to check out the &lt;a href="https://docs.spring.io/spring-data/mongodb/docs/2.1.0.RELEASE/reference/html/#new-features.2-1-0"&gt;new features&lt;/a&gt; section in the reference documentation to learn more about reactive MapReduce, default sorting, &lt;code&gt;findAndReplace(…)&lt;/code&gt; methods, and new Aggregation operators and stages.&lt;/p&gt;
 &lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Security 5.1 goes GA</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/09/27/spring-security-5-1-goes-ga" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Joe Grandja</name>
-    </author>
-    <id>tag:spring.io,2018-09-22:3411</id>
-    <updated>2018-09-27T13:07:16Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the community, it is my pleasure to announce the general availability of Spring Security 5.1.
-This release closes off &lt;a href="https://github.com/spring-projects/spring-security/milestone/107?closed=1"&gt;50+ tickets&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Please check out the &lt;a href="https://docs.spring.io/spring-security/site/docs/5.1.0.RELEASE/reference/htmlsingle/#new"&gt;What’s New&lt;/a&gt; in Spring Security 5.1.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;As always, we look forward to hearing your &lt;a href="https://github.com/spring-projects/spring-security/issues"&gt;feedback&lt;/a&gt;!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; |
-&lt;a href="http://docs.spring.io/spring-security/site/docs/5.1.0.RELEASE/reference/htmlsingle/"&gt;Reference&lt;/a&gt;
-| &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>The Reactive Revolution at SpringOne Platform 2018 (part 1/N)</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/09/27/the-reactive-revolution-at-springone-platform-2018-part-1-n" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2018-09-27:3418</id>
-    <updated>2018-09-27T01:48:00Z</updated>
-    <content type="html">&lt;p&gt;Hi Spring fans! What a crazy week in Spring it&amp;rsquo;s been! I&amp;rsquo;m at SpringOne Platform 2018 soaking up all the exciting community events, interacting with people from around the planet who love Pivotal and love Spring! I just got asked to take a selfie with a woman from Vietnam while five miles from the show - at a local mall where I happened to be for a community dinner! It&amp;rsquo;s wonderful that the Pivotal brings people of so many disparate cultures and places together.&lt;/p&gt;
-&lt;p&gt;Today, Wednesday 26th, 2018, was a &lt;em&gt;doozie&lt;/em&gt;! There are so many wonderful things happening this week, of course, but today was a very special one for me. Today saw us take the wraps off of the amazing work Pivotal is doing on two fronts. I wanted only to briefly touch on these topics in this post. You&amp;rsquo;ll no doubt hear more about this from us in the weeks to come!&lt;/p&gt;&lt;h2&gt;&lt;a href="#reactive-sql-data-access-with-r2dbc" class="anchor" name="reactive-sql-data-access-with-r2dbc"&gt;&lt;/a&gt;Reactive SQL Data Access with R2DBC&lt;/h2&gt;
-&lt;p&gt;First, we announced our work on trying to support a standard for reactive SQL data access with &lt;a href=""&gt;R2DBC&lt;/a&gt;. R2DBC is early days yet, but very exciting. Thus far when we talk about data access, I&amp;rsquo;ve been quick to remind people that they while they could use JDBC from within a reactive application, they&amp;rsquo;re taking the issue of scaling out that interaction as their own responsibility. It would be up to them to configure more threads to the &lt;code&gt;Scheduler&lt;/code&gt; assigned to the reactive stream in which any SQL data access was happening. This was necessary because JDBC is a fundamentally blocking and synchronous API. It doesn&amp;rsquo;t have the ability to perform IO and then call you back when there&amp;rsquo;s activity; the client thread is left waiting for the replies. R2DBC offers an alternative. It&amp;rsquo;s &lt;em&gt;not&lt;/em&gt; meant to be a wrapper around JDBC, but instead to support functional reactive data access built on natively reactive SQL database drivers. We have an SPI layer and an implementation supporting PostgreSQL. &lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s look at an example. In order to get this to work, I went to the &lt;a href="http://start.Spring.io"&gt;Spring Initializr&lt;/a&gt; and selected &lt;code&gt;Reactive Web&lt;/code&gt; and &lt;code&gt;Lombok&lt;/code&gt;. I made sure to choose a &lt;code&gt;SNAPSHOT&lt;/code&gt; version of Spring Boot. You don&amp;rsquo;t need SNAPSHOTs of Spring Boot itself, &lt;em&gt;per se&lt;/em&gt;, but you will want the Spring Initializr to add the Spring snapshot repositories to your build so that you can resolve the &lt;code&gt;r2dbc-postgresql&lt;/code&gt; dependency. Then, I (manually! the horror!) edited the Maven build, &lt;code&gt;pom.xml&lt;/code&gt;, and added a dependency on the &lt;code&gt;io.r2dbc:r2dbc-postgresql:1.0.0.BUILD-SNAPSHOT&lt;/code&gt; dependency to the build.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;package s1p.r2dbc;&#xD;
-&#xD;
-import lombok.AllArgsConstructor;&#xD;
-import lombok.Data;&#xD;
-import lombok.NoArgsConstructor;&#xD;
-import lombok.extern.log4j.Log4j2;&#xD;
-&#xD;
-import io.r2dbc.postgresql.PostgresqlConnectionFactory;&#xD;
-import io.r2dbc.postgresql.PostgresqlResult;&#xD;
-&#xD;
-import org.springframework.stereotype.Service;&#xD;
-import reactor.core.publisher.Flux;&#xD;
-&#xD;
-import org.springframework.beans.factory.annotation.Value;&#xD;
-import org.springframework.boot.SpringApplication;&#xD;
-import org.springframework.boot.autoconfigure.SpringBootApplication;&#xD;
-import org.springframework.context.annotation.Bean;&#xD;
-&#xD;
-import java.net.URI;&#xD;
-&#xD;
-@Log4j2&#xD;
-@SpringBootApplication&#xD;
-public class PostgresqlApplication {&#xD;
-&#xD;
-  public static void main(String args[]) {&#xD;
-    SpringApplication.run(PostgresqlApplication.class, args);&#xD;
-  }&#xD;
-&#xD;
-  @Bean&#xD;
-  PostgresqlConnectionFactory connectionFactory(&#xD;
-      @Value(&amp;quot;${spring.datasource.url}&amp;quot;) String url) {&#xD;
-&#xD;
-    URI uri = URI.create(url);&#xD;
-    String host = uri.getHost();&#xD;
-    String userInfo = uri.getUserInfo();&#xD;
-    String user = userInfo, pw = &amp;quot;&amp;quot;;&#xD;
-&#xD;
-    if (userInfo.contains(&amp;quot;:&amp;quot;)) {&#xD;
-      user = userInfo.split(&amp;quot;:&amp;quot;)[0];&#xD;
-      pw = userInfo.split(&amp;quot;:&amp;quot;)[1];&#xD;
-    }&#xD;
-&#xD;
-    String name = uri.getPath().substring(1);&#xD;
-    PostgresqlConnectionConfiguration configuration = PostgresqlConnectionConfiguration&#xD;
-        .builder() //&#xD;
-        .database(name) //&#xD;
-        .host(host) //&#xD;
-        .username(user) //&#xD;
-        .password(pw) //&#xD;
-        .build();&#xD;
-    return new PostgresqlConnectionFactory(configuration);&#xD;
-  }&#xD;
-}&#xD;
-&#xD;
-@Log4j2&#xD;
-@Service&#xD;
-class CustomerService {&#xD;
-&#xD;
-  private final ConnectionFactory connectionFactory;&#xD;
-&#xD;
-  CustomerService(PostgresqlConnectionFactory pgc) {&#xD;
-    this.connectionFactory = pgc;&#xD;
-  }&#xD;
-&#xD;
-  Flux&amp;lt;Result&amp;gt; delete(Long id) {&#xD;
-    return Mono.from(this.connectionFactory.create())&#xD;
-      .flatMapMany(connection -&amp;gt; connection&#xD;
-        .createStatement(&amp;quot;DELETE FROM customers where id = $1&amp;quot;)&#xD;
-        .bind(&amp;quot;$1&amp;quot;, id) //&#xD;
-        .execute());&#xD;
-  }&#xD;
-&#xD;
-  Flux&amp;lt;Result&amp;gt; create(Long id, String email) {&#xD;
-    return Mono.from(this.connectionFactory.create())&#xD;
-      .flatMapMany(connection -&amp;gt; connection&#xD;
-        .createStatement(&amp;quot;INSERT INTO customers(id,email) VALUES($1, $2)&amp;quot;)&#xD;
-        .bind(&amp;quot;$1&amp;quot;, id) //&#xD;
-        .bind(&amp;quot;$2&amp;quot;, email) //&#xD;
-        .add().execute());&#xD;
-  }&#xD;
-&#xD;
-  Flux&amp;lt;Customer&amp;gt; all() {&#xD;
-&#xD;
-    return Mono&#xD;
-      .from(this.connectionFactory&#xD;
-        .create())&#xD;
-      .flatMapMany(connection -&amp;gt; Flux.from(&#xD;
-        connection.createStatement(&amp;quot;select * from customers&amp;quot;).execute())&#xD;
-        .flatMap(result -&amp;gt; result.map((row, rowMetadata) -&amp;gt; new Customer(row.get(&amp;quot;id&amp;quot;, Long.class),&#xD;
-          row.get(&amp;quot;email&amp;quot;, String.class)))));&#xD;
-  }&#xD;
-&#xD;
-}&#xD;
-&#xD;
-@Data&#xD;
-@AllArgsConstructor&#xD;
-@NoArgsConstructor&#xD;
-class Customer {&#xD;
-&#xD;
-  private Long id;&#xD;
-&#xD;
-  private String email;&#xD;
-&#xD;
-} &#xD;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Pretty cool, eh? The APIs are natively reactive and mean you can take advantage of the facilities provided for retries and composition afforded to you by those APIs. &lt;/p&gt;&lt;h2&gt;&lt;a href="#rsocket-the-reactive-wire-protocol" class="anchor" name="rsocket-the-reactive-wire-protocol"&gt;&lt;/a&gt;RSocket: the reactive wire protocol&lt;/h2&gt;
-&lt;p&gt;We also debuted our support for RSocket, a protocol developed by - among others - folks from Netflix who have since moved to Facebook. RSocket is a wire protocol that surfaces the tenants of reactive processing as part of the protocol itself. Facebook have developed two RSocket clients: one in C++ and another in Java. The Java RSocket client builds upon the Reactor project! RSocket is a binary protocol, though, so in theory you could build clients in other languages, as well. &lt;/p&gt;
-&lt;p&gt;RSocket is a general purpose data conveyance protocol. It supports a number of message exchange patterns or styles including, but not limited to, request-response, fire-and-forget, publish-subscribe and streaming. The sky&amp;rsquo;s the limit! This post couldn&amp;rsquo;t hope to thoroughly introduce all of the options, so let&amp;rsquo;s look at a simple streaming example that has two components, a producer and a consumer. In order to get this to work, I went to the Spring Initializr, selected &lt;code&gt;Lombok&lt;/code&gt; and I chose the latest (stable) version of Spring Boot. In the build file, &lt;code&gt;pom.xml&lt;/code&gt;, I added two dependencies: &lt;code&gt;io.rsocket:rsocket-transport-netty:0.11.5&lt;/code&gt; and &lt;code&gt;io.rsocket:rsocket-core:0.11.5&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The goal here is to demonstrate how very simple these APIs are, and how flexible. You can use them directly or, as for example Netifi have done, as the basis for a whole suite of infrastructure supporting even more advanced use cases. &lt;/p&gt;
-&lt;p&gt;The crux of this simple sample is that the producer is going to emit a new record every second, forever! So long as the universe hasn&amp;rsquo;t experienced its heat death, this example should keep going! &lt;/p&gt;
-&lt;p&gt;First, let&amp;rsquo;s look at a trivial producer example. I set this up so that it will listen for the &lt;code&gt;ApplicationReadyEvent&lt;/code&gt; and only then start serving requests. I want to keep the Java process up (and thus listening for requests) so, as a bit of a kludge, I use &lt;code&gt;System.in.read()&lt;/code&gt; to poll the console for input. Remember, this API is non-blocking and asynchronous! It won&amp;rsquo;t keep the main thread alive if we don&amp;rsquo;t help it. &lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;package s1p.rsocket.producer;&#xD;
-&#xD;
-import io.rsocket.AbstractRSocket;&#xD;
-import io.rsocket.Payload;&#xD;
-import io.rsocket.RSocketFactory;&#xD;
-import io.rsocket.SocketAcceptor;&#xD;
-import io.rsocket.transport.netty.server.TcpServerTransport;&#xD;
-import io.rsocket.util.DefaultPayload;&#xD;
-import lombok.extern.log4j.Log4j2;&#xD;
-import org.springframework.boot.SpringApplication;&#xD;
-import org.springframework.boot.autoconfigure.SpringBootApplication;&#xD;
-import org.springframework.boot.context.event.ApplicationReadyEvent;&#xD;
-import org.springframework.context.ApplicationListener;&#xD;
-import reactor.core.publisher.Flux;&#xD;
-import reactor.core.publisher.Mono;&#xD;
-&#xD;
-import java.io.IOException;&#xD;
-import java.time.Duration;&#xD;
-import java.time.Instant;&#xD;
-&#xD;
-@SpringBootApplication&#xD;
-@Log4j2&#xD;
-public class ProducerApplication implements ApplicationListener&amp;lt;ApplicationReadyEvent&amp;gt; {&#xD;
-&#xD;
-  public static void main(String[] args) throws IOException {&#xD;
-    SpringApplication.run(ProducerApplication.class, args);&#xD;
-    System.in.read();&#xD;
-  }&#xD;
-&#xD;
-  @Override&#xD;
-  public void onApplicationEvent(ApplicationReadyEvent applicationReadyEvent) {&#xD;
-    SocketAcceptor sa = (connectionSetupPayload, rSocket) -&amp;gt;&#xD;
-      Mono.just(new AbstractRSocket() {&#xD;
-&#xD;
-        @Override&#xD;
-        public Flux&amp;lt;Payload&amp;gt; requestStream(Payload payload) { // produce a result when asked...&#xD;
-          return Flux&#xD;
-            .interval(Duration.ofMillis(1000))  // ...every one second&#xD;
-            .map(aLong -&amp;gt; DefaultPayload.create(&amp;quot;interval: &amp;quot; + aLong));&#xD;
-        }&#xD;
-      });&#xD;
-&#xD;
-    RSocketFactory&#xD;
-      .receive()&#xD;
-      .acceptor(sa)&#xD;
-      .transport(TcpServerTransport.create(&amp;quot;localhost&amp;quot;, 7000))&#xD;
-      .start()&#xD;
-      .onTerminateDetach()&#xD;
-      .subscribe(nettyContextCloseable -&amp;gt; log.info(&amp;quot;started the server @ &amp;quot; + Instant.now().toString()));&#xD;
-  }&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The consumer is just as straightforward. It initiates a request to the service, gets the reactive streams &lt;code&gt;Publisher&amp;lt;T&amp;gt;&lt;/code&gt; from the service and iterates through each record, unpacking the binary payload as a &lt;code&gt;String&lt;/code&gt;, and logging it as it arrives. Here too, I use &lt;code&gt;System.in.read()&lt;/code&gt; as a way to keep the thread running.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;package s1p.rsocket.consumer;&#xD;
-&#xD;
-import io.rsocket.Payload;&#xD;
-import io.rsocket.RSocketFactory;&#xD;
-import io.rsocket.transport.netty.client.TcpClientTransport;&#xD;
-import io.rsocket.util.DefaultPayload;&#xD;
-import lombok.extern.log4j.Log4j2;&#xD;
-import org.springframework.boot.SpringApplication;&#xD;
-import org.springframework.boot.autoconfigure.SpringBootApplication;&#xD;
-import org.springframework.boot.context.event.ApplicationReadyEvent;&#xD;
-import org.springframework.context.ApplicationListener;&#xD;
-&#xD;
-import java.io.IOException;&#xD;
-&#xD;
-@Log4j2&#xD;
-@SpringBootApplication&#xD;
-public class ConsumerApplication implements ApplicationListener&amp;lt;ApplicationReadyEvent&amp;gt; {&#xD;
-&#xD;
-  public static void main(String[] args) throws IOException {&#xD;
-    SpringApplication.run(ConsumerApplication.class, args);&#xD;
-    System.in.read();&#xD;
-  }&#xD;
-&#xD;
-  @Override&#xD;
-  public void onApplicationEvent(ApplicationReadyEvent evt) {&#xD;
-    RSocketFactory&#xD;
-      .connect()&#xD;
-      .transport(TcpClientTransport.create(&amp;quot;localhost&amp;quot;, 7000))&#xD;
-      .start()&#xD;
-      .flatMapMany(socket -&amp;gt;&#xD;
-        socket&#xD;
-          .requestStream(DefaultPayload.create(&amp;quot;Hello&amp;quot;))&#xD;
-          .map(Payload::getDataUtf8)&#xD;
-          .doFinally(signal -&amp;gt; socket.dispose())&#xD;
-      )&#xD;
-      .subscribe(name -&amp;gt; log.info(&amp;quot;consuming &amp;quot; + name + &amp;quot;.&amp;quot;));&#xD;
-  }&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Both producer and consumer connect to &lt;code&gt;localhost:7000&lt;/code&gt; and start interacting. RSocket, like HTTP, doesn&amp;rsquo;t really care what the payload of the message is. It&amp;rsquo;s binary data on the wire, after all. &lt;/p&gt;&lt;h2&gt;&lt;a href="#next-steps" class="anchor" name="next-steps"&gt;&lt;/a&gt;Next Steps&lt;/h2&gt;
-&lt;p&gt;There have been a ton of talks that expand on both of these topics recorded here at SpringOne Platform! They&amp;rsquo;ll be online soon enough. (Don&amp;rsquo;t you wish you were here, in the meantime?) Spring plays a strong role here because it is end-to-end reactive. Imagine it! You could build reactive microservices that communicate service-to-service using RSocket. Why not use &lt;code&gt;@Tailable&lt;/code&gt; reactive Spring Data MongoDB repository methods to do a sort of continuous query on data in your MongoDB data set and stream, over RSocket, those results as they arrive in your MongoDB store? You could do the reverse, as well. Your RSocket client could stream a lot of data to be written to MongoDB, using the new &lt;em&gt;reactive&lt;/em&gt; transaction support in the Spring Data MonogDB release in the just released Spring Data Lovelace! Why not use R2DBC and return large amounts of data in a streaming fashion over RSocket. RSocket is also optimal for the edge, too! You can conduct RSocket over, for example, websockets. Imagine that: RSocket-based services that can be consumed directly by HTML5 clients. Or, you could create reactive HTTP services using Spring WebFlux that in turn invoke RSocket based services which in turn invoke R2DBC. As they say, the skies are potentially unbounded and asynchronous! &lt;/p&gt;
-&lt;p&gt;The &lt;a href="http://twitter.com/ProjectReactor"&gt;Reactor team&lt;/a&gt; and the Spring team&amp;rsquo;s &lt;a href="http://twitter.com/NebHale"&gt;Ben Hale&lt;/a&gt;, among others, have worked diligently on both of these projects over more than a year, so I know they&amp;rsquo;re very excited to share this news with you and to answer any questions you have as you take up proverbial arms in the reactive revolution!&lt;/p&gt;</content>
   </entry>
 </feed>

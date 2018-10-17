@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/Users/humphreyminott/my_git_repos/MovieReview/demo"/>
 			<item value="/Users/humphreyminott/my_git_repos/bam/pebbles-meta/FlashcardsService"/>
 		</list>
 		<list key="projectNameTemplate">
