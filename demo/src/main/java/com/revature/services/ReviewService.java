@@ -35,6 +35,6 @@ public class ReviewService {
 	}
 	
 	public List<Review> getAllReviewsByCreatorId(int creator_id){
-		return repo.findAllBycreator_id(creator_id);
+		return repo.findAllBycreatorId(creator_id);
 	}
 }

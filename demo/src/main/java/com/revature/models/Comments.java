@@ -20,16 +20,16 @@ public class Comments implements Serializable {
 	@Column(name="COMMENT_ID")
 	@SequenceGenerator(name = "INCREMENTOR", sequenceName="INCREMENTOR")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="INCREMENTOR")
-	private int comment_id;
+	private int commentId;
 	
 	@Column(name="CREATOR_ID")
-	private int creator_id;
+	private int creatorId;
 	
 	@Column(name="REVIEW_ID")
-	private int review_id;
+	private int reviewId;
 	
 	@Column(name="COMMENT_BODY")
-	private String comment_body;
+	private String commentBody;
 	
 	@ManyToOne
 	@JoinColumn(name="CREATOR_ID", insertable= false, updatable= false)
@@ -41,60 +41,74 @@ public class Comments implements Serializable {
 	
 	public Comments () {}
 
-	public Comments(int comment_id, int creator_id, int review_id, String comment_body) {
+	public Comments(int commentId, int creatorId, int reviewId, String commentBody, Users commentUser, Review review) {
 		super();
-		this.comment_id = comment_id;
-		this.creator_id = creator_id;
-		this.review_id = review_id;
-		this.comment_body = comment_body;
+		this.commentId = commentId;
+		this.creatorId = creatorId;
+		this.reviewId = reviewId;
+		this.commentBody = commentBody;
+		this.commentUser = commentUser;
+		this.review = review;
 	}
 
-	public int getComment_id() {
-		return comment_id;
+	public int getCommentId() {
+		return commentId;
 	}
 
-	public void setComment_id(int comment_id) {
-		this.comment_id = comment_id;
+	public void setCommentId(int commentId) {
+		this.commentId = commentId;
 	}
 
-	public int getCreator_id() {
-		return creator_id;
+	public int getCreatorId() {
+		return creatorId;
 	}
 
-	public void setCreator_id(int creator_id) {
-		this.creator_id = creator_id;
+	public void setCreatorId(int creatorId) {
+		this.creatorId = creatorId;
 	}
 
-	public int getReview_id() {
-		return review_id;
+	public int getReviewId() {
+		return reviewId;
 	}
 
-	public void setReview_id(int review_id) {
-		this.review_id = review_id;
+	public void setReviewId(int reviewId) {
+		this.reviewId = reviewId;
 	}
 
-	public String getComment_body() {
-		return comment_body;
+	public String getCommentBody() {
+		return commentBody;
 	}
 
-	public void setComment_body(String comment_body) {
-		this.comment_body = comment_body;
+	public void setCommentBody(String commentBody) {
+		this.commentBody = commentBody;
 	}
 
-	@Override
-	public String toString() {
-		return "Comments [comment_id=" + comment_id + ", creator_id=" + creator_id + ", review_id=" + review_id
-				+ ", comment_body=" + comment_body + "]";
+	public Users getCommentUser() {
+		return commentUser;
+	}
+
+	public void setCommentUser(Users commentUser) {
+		this.commentUser = commentUser;
+	}
+
+	public Review getReview() {
+		return review;
+	}
+
+	public void setReview(Review review) {
+		this.review = review;
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((comment_body == null) ? 0 : comment_body.hashCode());
-		result = prime * result + comment_id;
-		result = prime * result + creator_id;
-		result = prime * result + review_id;
+		result = prime * result + ((commentBody == null) ? 0 : commentBody.hashCode());
+		result = prime * result + commentId;
+		result = prime * result + ((commentUser == null) ? 0 : commentUser.hashCode());
+		result = prime * result + creatorId;
+		result = prime * result + ((review == null) ? 0 : review.hashCode());
+		result = prime * result + reviewId;
 		return result;
 	}
 
@@ -107,19 +121,35 @@ public class Comments implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Comments other = (Comments) obj;
-		if (comment_body == null) {
-			if (other.comment_body != null)
+		if (commentBody == null) {
+			if (other.commentBody != null)
 				return false;
-		} else if (!comment_body.equals(other.comment_body))
+		} else if (!commentBody.equals(other.commentBody))
 			return false;
-		if (comment_id != other.comment_id)
+		if (commentId != other.commentId)
 			return false;
-		if (creator_id != other.creator_id)
+		if (commentUser == null) {
+			if (other.commentUser != null)
+				return false;
+		} else if (!commentUser.equals(other.commentUser))
 			return false;
-		if (review_id != other.review_id)
+		if (creatorId != other.creatorId)
+			return false;
+		if (review == null) {
+			if (other.review != null)
+				return false;
+		} else if (!review.equals(other.review))
+			return false;
+		if (reviewId != other.reviewId)
 			return false;
 		return true;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Comments [commentId=" + commentId + ", creatorId=" + creatorId + ", reviewId=" + reviewId
+				+ ", commentBody=" + commentBody + ", commentUser=" + commentUser + ", review=" + review + "]";
+	}
+
 
 }

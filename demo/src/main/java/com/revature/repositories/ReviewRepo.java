@@ -12,5 +12,5 @@ import com.revature.models.Review;
 @Transactional
 public interface ReviewRepo extends JpaRepository<Review, Integer>{
 
-	List<Review> findAllBycreator_id(int creator_id);
+	List<Review> findAllBycreatorId(int creatorId);
 }

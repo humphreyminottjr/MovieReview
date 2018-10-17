@@ -20,19 +20,19 @@ public class Review implements Serializable{
 	@Column(name="REVIEW_ID")
 	@SequenceGenerator(name = "INCREMENTOR", sequenceName="INCREMENTOR")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="INCREMENTOR")
-	private int review_id;
+	private int reviewId;
 	
 	@Column(name="CREATOR_ID")
-	private int creator_id;
+	private int creatorId;
 	
 	@Column(name="MOVIE_ID")
-	private int movie_id;
+	private int movieId;
 	
 	@Column(name="REVIEW_TITLE")
-	private String review_title;
+	private String reviewTitle;
 	
 	@Column(name="REVIEW_BODY")
-	private String review_body;
+	private String reviewBody;
 	
 	@ManyToOne
 	@JoinColumn(name="CREATOR_ID", insertable= false, updatable= false)
@@ -44,70 +44,85 @@ public class Review implements Serializable{
 	
 	public Review () {}
 
-	public Review(int review_id, int creator_id, int movie_id, String review_title, String review_body) {
+	public Review(int reviewId, int creatorId, int movieId, String reviewTitle, String reviewBody, Users user,
+			Movies movie) {
 		super();
-		this.review_id = review_id;
-		this.creator_id = creator_id;
-		this.movie_id = movie_id;
-		this.review_title = review_title;
-		this.review_body = review_body;
+		this.reviewId = reviewId;
+		this.creatorId = creatorId;
+		this.movieId = movieId;
+		this.reviewTitle = reviewTitle;
+		this.reviewBody = reviewBody;
+		this.user = user;
+		this.movie = movie;
 	}
 
-	public int getReview_id() {
-		return review_id;
+	public int getReviewId() {
+		return reviewId;
 	}
 
-	public void setReview_id(int review_id) {
-		this.review_id = review_id;
+	public void setReviewId(int reviewId) {
+		this.reviewId = reviewId;
 	}
 
-	public int getCreator_id() {
-		return creator_id;
+	public int getCreatorId() {
+		return creatorId;
 	}
 
-	public void setCreator_id(int creator_id) {
-		this.creator_id = creator_id;
+	public void setCreatorId(int creatorId) {
+		this.creatorId = creatorId;
 	}
 
-	public int getMovie_id() {
-		return movie_id;
+	public int getMovieId() {
+		return movieId;
 	}
 
-	public void setMovie_id(int movie_id) {
-		this.movie_id = movie_id;
+	public void setMovieId(int movieId) {
+		this.movieId = movieId;
 	}
 
-	public String getReview_title() {
-		return review_title;
+	public String getReviewTitle() {
+		return reviewTitle;
 	}
 
-	public void setReview_title(String review_title) {
-		this.review_title = review_title;
+	public void setReviewTitle(String reviewTitle) {
+		this.reviewTitle = reviewTitle;
 	}
 
-	public String getReview_body() {
-		return review_body;
+	public String getReviewBody() {
+		return reviewBody;
 	}
 
-	public void setReview_body(String review_body) {
-		this.review_body = review_body;
+	public void setReviewBody(String reviewBody) {
+		this.reviewBody = reviewBody;
 	}
 
-	@Override
-	public String toString() {
-		return "Review [review_id=" + review_id + ", creator_id=" + creator_id + ", movie_id=" + movie_id
-				+ ", review_title=" + review_title + ", review_body=" + review_body + "]";
+	public Users getUser() {
+		return user;
+	}
+
+	public void setUser(Users user) {
+		this.user = user;
+	}
+
+	public Movies getMovie() {
+		return movie;
+	}
+
+	public void setMovie(Movies movie) {
+		this.movie = movie;
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + creator_id;
-		result = prime * result + movie_id;
-		result = prime * result + ((review_body == null) ? 0 : review_body.hashCode());
-		result = prime * result + review_id;
-		result = prime * result + ((review_title == null) ? 0 : review_title.hashCode());
+		result = prime * result + creatorId;
+		result = prime * result + ((movie == null) ? 0 : movie.hashCode());
+		result = prime * result + movieId;
+		result = prime * result + ((reviewBody == null) ? 0 : reviewBody.hashCode());
+		result = prime * result + reviewId;
+		result = prime * result + ((reviewTitle == null) ? 0 : reviewTitle.hashCode());
+		result = prime * result + ((user == null) ? 0 : user.hashCode());
 		return result;
 	}
 
@@ -120,23 +135,41 @@ public class Review implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		Review other = (Review) obj;
-		if (creator_id != other.creator_id)
+		if (creatorId != other.creatorId)
 			return false;
-		if (movie_id != other.movie_id)
-			return false;
-		if (review_body == null) {
-			if (other.review_body != null)
+		if (movie == null) {
+			if (other.movie != null)
 				return false;
-		} else if (!review_body.equals(other.review_body))
+		} else if (!movie.equals(other.movie))
 			return false;
-		if (review_id != other.review_id)
+		if (movieId != other.movieId)
 			return false;
-		if (review_title == null) {
-			if (other.review_title != null)
+		if (reviewBody == null) {
+			if (other.reviewBody != null)
 				return false;
-		} else if (!review_title.equals(other.review_title))
+		} else if (!reviewBody.equals(other.reviewBody))
+			return false;
+		if (reviewId != other.reviewId)
+			return false;
+		if (reviewTitle == null) {
+			if (other.reviewTitle != null)
+				return false;
+		} else if (!reviewTitle.equals(other.reviewTitle))
+			return false;
+		if (user == null) {
+			if (other.user != null)
+				return false;
+		} else if (!user.equals(other.user))
 			return false;
 		return true;
-	}	
+	}
+
+	@Override
+	public String toString() {
+		return "Review [reviewId=" + reviewId + ", creatorId=" + creatorId + ", movieId=" + movieId + ", reviewTitle="
+				+ reviewTitle + ", reviewBody=" + reviewBody + ", user=" + user + ", movie=" + movie + "]";
+	}
+
+	
 
 }
