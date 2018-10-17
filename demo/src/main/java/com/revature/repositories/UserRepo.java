@@ -9,5 +9,7 @@ import com.revature.models.Users;
 @Repository
 @Transactional
 public interface UserRepo extends JpaRepository<Users, Integer>{
+	
+	Users findByusernameAndPassword(String username, String password);
 
 }

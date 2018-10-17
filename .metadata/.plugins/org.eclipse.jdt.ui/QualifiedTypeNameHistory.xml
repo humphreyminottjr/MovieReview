@@ -9,7 +9,6 @@
 <fullyQualifiedTypeName name="javax.transaction.Transactional"/>
 <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
 <fullyQualifiedTypeName name="com.revature.models.Users"/>
-<fullyQualifiedTypeName name="com.revature.models.Review"/>
 <fullyQualifiedTypeName name="com.revature.models.Movies"/>
 <fullyQualifiedTypeName name="com.revature.models.Comments"/>
 <fullyQualifiedTypeName name="com.revature.models.Bookmarks"/>
@@ -20,4 +19,9 @@
 <fullyQualifiedTypeName name="com.revature.services.UserService"/>
 <fullyQualifiedTypeName name="com.revature.repositories.CommentsRepo"/>
 <fullyQualifiedTypeName name="com.revature.repositories.UserRepo"/>
+<fullyQualifiedTypeName name="java.util.Optional"/>
+<fullyQualifiedTypeName name="com.revature.models.Review"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
